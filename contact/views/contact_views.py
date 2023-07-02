@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.core.paginator import Paginator
 
 
+
 def index(request):
     contacts = Contact.objects.filter(show=True).order_by('-id')
 
