@@ -13,8 +13,10 @@ class ContactForm(forms.ModelForm):
         widget=forms.FileInput(
             attrs={
                 'accept': 'image/*',
+
             }
-        )
+        ),
+        required=False
     )
 
 
